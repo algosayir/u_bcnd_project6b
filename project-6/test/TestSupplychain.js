@@ -49,23 +49,10 @@ contract('SupplyChain', function(accounts) {
         var eventEmitted = false
         
         // Watch the emitted event Harvested()
-        //var event = supplyChain.Harvested()
-        //await event.watch((err, res) => {
-        //    eventEmitted = true
-        //})
-
-        supplyChain.events.Harvested((error, event) => {
-            eventEmitted = true;
-            console.log("Yes");
-        });
-        //supplyChain.events.Harvested((error, event) => { console.log(event); eventEmitted = true;})
-        // .on('data', (event) => {
-        //     console.log(event); // same results as the optional callback above
-        // })
-        // .on('changed', (event) => {
-        //     // remove event from local database
-        // })
-        // .on('error', console.error);
+        // Unfortutly this not supported Web3 1.0.0.1
+        // After long time of trials: I got The current provider doesn't support subscriptions: HttpProvider
+        // I read below issue and I stopped trials
+        // https://github.com/trufflesuite/truffle/issues/1633
 
         // Mark an item as Harvested by calling function harvestItem()
         await supplyChain.harvestItem(upc, originFarmerID, originFarmName, originFarmInformation, originFarmLatitude, originFarmLongitude, productNotes)
@@ -84,7 +71,7 @@ contract('SupplyChain', function(accounts) {
         assert.equal(resultBufferOne[6], originFarmLatitude, 'Error: Missing or Invalid originFarmLatitude')
         assert.equal(resultBufferOne[7], originFarmLongitude, 'Error: Missing or Invalid originFarmLongitude')
         assert.equal(resultBufferTwo[5], 0, 'Error: Invalid item State')
-        //assert.equal(eventEmitted, true, 'Invalid event emitted')        
+            
     })    
 
     // 2nd Test
@@ -92,10 +79,9 @@ contract('SupplyChain', function(accounts) {
         const supplyChain = await SupplyChain.deployed()
         
         // Declare and Initialize a variable for event
-        
+        var eventEmitted = false
         
         // Watch the emitted event Processed()
-        
 
         // Mark an item as Processed by calling function processtItem()
         await supplyChain.processItem(upc)

@@ -1,5 +1,5 @@
 # Blockchain nanodegree project 6b 
-# Ethereum Dapp for Tracking Items through Supply Chain
+# Ethereum DApp for Tracking Items through Supply Chain
 This repository is a modification of boiler plate code on the following repository: 
 https://github.com/udacity/nd1309-Project-6b-Example-Template
 
@@ -47,10 +47,13 @@ Ganache CLI v6.4.3 (ganache-core: 2.5.5)
 
 ## UML diagrams
 ### State diagram 
-![State diagram](images/State_diagram.png)
+![State diagram](https://github.com/algosayir/u_bcnd_project6b/blob/master/images/State_diagram.png)
 ### Sequence diagram 
-![Sequence diagram](images/Sequence_diagram.png)
+![Sequence diagram](https://github.com/algosayir/u_bcnd_project6b/blob/master/images/Sequence_diagram.png)
 ### Activity diagram 
-![Activity diagram](images/Activity_diagram.png)
+![Activity diagram](https://github.com/algosayir/u_bcnd_project6b/blob/master/images/Activity_diagram.png)
 ### Class diagram 
-![Class diagram](images/Class_diagram.png)
+Class diagram was generated using sol2uml 
+https://github.com/naddison36/sol2uml
+
+![Class diagram](https://github.com/algosayir/u_bcnd_project6b/blob/master/images/Class_diagram.png)
