@@ -47,13 +47,12 @@ Ganache CLI v6.4.3 (ganache-core: 2.5.5)
 
 ## UML diagrams
 ### State diagram 
-![State diagram](https://github.com/algosayir/u_bcnd_project6b/blob/master/images/State_diagram.png)
+[State diagram](https://github.com/algosayir/u_bcnd_project6b/blob/master/images/State_diagram.png)
 ### Sequence diagram 
-![Sequence diagram](https://github.com/algosayir/u_bcnd_project6b/blob/master/images/Sequence_diagram.png)
+[Sequence diagram](https://github.com/algosayir/u_bcnd_project6b/blob/master/images/Sequence_diagram.png)
 ### Activity diagram 
-![Activity diagram](https://github.com/algosayir/u_bcnd_project6b/blob/master/images/Activity_diagram.png)
+[Activity diagram](https://github.com/algosayir/u_bcnd_project6b/blob/master/images/Activity_diagram.png)
 ### Class diagram 
-Class diagram was generated using sol2uml 
-https://github.com/naddison36/sol2uml
+Class diagram was generated using [sol2uml](https://github.com/naddison36/sol2uml)
 
-![Class diagram](https://github.com/algosayir/u_bcnd_project6b/blob/master/images/Class_diagram.png)
+[Class diagram](https://github.com/algosayir/u_bcnd_project6b/blob/master/images/Class_diagram.png)
